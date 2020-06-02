@@ -1,7 +1,7 @@
 import React from "react";
 
-function Day() {
-  return <div className="day">1</div>;
+function Day(props) {
+return <div className="day">{props.date}</div>;
 }
 
 export default Day;
