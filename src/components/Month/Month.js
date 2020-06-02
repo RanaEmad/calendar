@@ -17,7 +17,13 @@ function Month() {
       currentDate.getMonth(),
       i
     ).getDay();
-    days.push(<Day key={"day" + i} date={i} weekDay={weekDay} />);
+
+    let today = "";
+    if (i === currentDate.getDate()) {
+      today = " today ";
+    }
+
+    days.push(<Day key={"day" + i} date={i} weekDay={weekDay} today={today} />);
   }
 
   return (

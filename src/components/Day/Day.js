@@ -12,7 +12,7 @@ week[6] = "Saturday";
 
 function Day(props) {
   return (
-    <div className={"day " + week[props.weekDay].toLowerCase()}>
+    <div className={"day " + props.today + week[props.weekDay].toLowerCase()}>
       <div className="date">{props.date}</div>
       <div className="weekday">{week[props.weekDay]}</div>
     </div>
