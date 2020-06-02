@@ -1,0 +1,72 @@
+.day {
+  padding: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: bottom;
+  opacity: 0.7;
+  box-shadow: 1px 1px 6px 0px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.day.sunday {
+  background-size: 40%;
+}
+
+.sunday {
+  background-image: url("./sunday.svg");
+}
+.monday {
+  background-image: url("./monday.svg");
+}
+.tuesday {
+  background-image: url("./tuesday.svg");
+}
+.wednesday {
+  background-image: url("./wednesday.svg");
+}
+.thursday {
+  background-image: url("./thursday.svg");
+}
+.friday {
+  background-image: url("./friday.svg");
+}
+.saturday {
+  background-image: url("./saturday.svg");
+}
+
+.weekday {
+  margin: 0 auto;
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
+}
+
+.wednesday .weekday {
+  color: #f9a727;
+  text-shadow: 1px 1px #3f3d55;
+}
+.saturday .weekday {
+  color: #e50914;
+  text-shadow: 1px 1px #00bfa6;
+}
+.thursday .weekday {
+  color: #2f2f41;
+  text-shadow: 1px 1px #00b0ff;
+}
+.friday .weekday {
+  color: #d83e75;
+  text-shadow: 1px 1px #2f2f41;
+}
+.sunday .weekday {
+  color: #ff6584;
+  text-shadow: 1px 1px #3f3d55;
+}
+.monday .weekday {
+  color: #0e01bf;
+  text-shadow: 1px 1px #ffb8b8;
+}
+.tuesday .weekday {
+  color: #36799a;
+  text-shadow: 1px 1px #ffb8b8;
+}

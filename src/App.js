@@ -4,7 +4,7 @@ import Month from "./components/Month/Month";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Month />
     </div>
   );

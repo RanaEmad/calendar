@@ -12,7 +12,12 @@ function Month() {
   ).getDate();
 
   for (let i = 1; i <= daysOfMonth; i++) {
-    days.push(<Day date={i} />);
+    let weekDay = new Date(
+      currentDate.getFullYear(),
+      currentDate.getMonth(),
+      i
+    ).getDay();
+    days.push(<Day key={"day" + i} date={i} weekDay={weekDay} />);
   }
 
   return (
